@@ -21,9 +21,11 @@
       });
   
       const connect = () => {
+        socket.connect()
         socket.emit("connection")
       }  
       const disconnect = () => { 
+        socket.disconnect()
         socket.emit("disconnect")
       }
       const send = () => {
